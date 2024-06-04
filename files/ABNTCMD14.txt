@@ -1,0 +1,152 @@
+3.1.2.1.9	Leitura das grandezas instantâneas – Comando com resposta simples
+Comando
+Octeto 001: 14 - Grandezas Instantâneas
+Octeto 002: Número de série do Leitor MSB
+Octeto 003: Número de série do Leitor
+Octeto 004: Número de série do Leitor LSB
+Octeto 005 até
+Octeto 064: NULL
+Octeto 065: CRC LSB
+Octeto 066: CRC MSB
+
+Resposta
+Octeto 001: 14 - Grandezas Instantâneas
+Octeto 002: Número de série do Medidor MSB
+Octeto 003: Número de série do Medidor
+Octeto 004: Número de série do Medidor
+Octeto 005: Número de série do Medidor LSB
+Octeto 006: Hora das grandezas
+Octeto 007: Minuto das grandezas
+Octeto 008: Segundo das grandezas
+Octeto 009: Dia das grandezas
+Octeto 010: Mês das grandezas
+Octeto 011: Ano das grandezas
+Octeto 012 até
+Octeto 015: Tensão de Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 016 até
+Octeto 019: Tensão de Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 020 até
+Octeto 023: Tensão de Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 024 até
+Octeto 027: Tensão de Linha AB (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 028 até
+Octeto 031: Tensão de Linha BC (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 032 até
+Octeto 035: Tensão de Linha CA (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 036 até
+Octeto 039: Corrente de Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 040 até
+Octeto 043: Corrente de Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 044 até
+Octeto 047: Corrente de Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 048 até
+Octeto 051: Corrente de Neutro (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 052 até
+Octeto 055: Potência Ativa Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 056 até
+Octeto 059: Potência Ativa Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 060 até
+Octeto 063: Potência Ativa Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 064 até
+Octeto 067: Potência Ativa Trifásica (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 068 até
+Octeto 071: Potência Reativa Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 072 até
+Octeto 075: Potência Reativa Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 076 até
+Octeto 079: Potência Reativa Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 080 até
+Octeto 083: Potência Reativa Trifásica (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 084 até
+Octeto 087: Potência Aparente Quadrática Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 088 até
+Octeto 091: Potência Aparente Quadrática Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 092 até
+Octeto 095: Potência Aparente Quadrática Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 096 até
+Octeto 099: Potência Aparente Quadrática Trifásica (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 100 até
+Octeto 103: Potência Aparente Vetorial Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 104 até
+Octeto 107: Potência Aparente Vetorial Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 108 até
+Octeto 111: Potência Aparente Vetorial Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 112 até
+Octeto 115: Potência Aparente Vetorial Trifásica (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 116 até
+Octeto 119: Potência Distorsiva Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 120 até
+Octeto 123: Potência Distorsiva Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 124 até
+Octeto 127: Potência Distorsiva Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 128 até
+Octeto 131: Potência Distorsiva Trifásica (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 132 até
+Octeto 135: Cosseno Fi Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 136 até
+Octeto 139: Cosseno Fi Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 140 até
+Octeto 143: Cosseno Fi Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 144 até
+Octeto 147: Cosseno Fi Trifásico (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 148: Característica Reativa da Fase A
+Octeto 149: Característica Reativa da Fase B
+Octeto 150: Característica Reativa da Fase C
+Octeto 151: Característica Reativa Trifásica
+Octeto 152 até
+Octeto 155: Fator de Potência RMS Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 156 até
+Octeto 159: Fator de Potência RMS Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 160 até
+Octeto 163: Fator de Potência RMS Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 164 até
+Octeto 167: Fator de Potência RMS Trifásico (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 168 até
+Octeto 171: Defasagem entre tensão e corrente Fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 172 até
+Octeto 175: Defasagem entre tensão e corrente Fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 176 até
+Octeto 179: Defasagem entre tensão e corrente Fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 180 até
+Octeto 183: Temperatura Interna (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 184 até
+Octeto 187: Freqüência da rede (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 188: Tipo de ligação
+Octeto 189: Latitude Graus (binário)
+Octeto 190: Latitude Minutos (binário)
+Octeto 191: Latitude Segundos (binário)
+Octeto 192: Latitude Norte ou Sul
+Octeto 193: Longitude Graus (binário)
+Octeto 194: Longitude Minutos (binário)
+Octeto 195: Longitude Segundos (binário)
+Octeto 196: Longitude Oeste ou Leste
+Octeto 197: Versão do medidor
+Octeto 198 até
+Octeto 201: Ângulo de tensão da fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 202 até
+Octeto 205: Ângulo de tensão da fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 206 até
+Octeto 209: Ângulo de tensão da fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 210 até
+Octeto 213: Ângulo entre fases A e B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 214 até
+Octeto 217: Ângulo entre fases B e C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 218 até
+Octeto 221: Ângulo entre fases C e A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 222 até
+Octeto 225: Distorção Harmônica de Tensão na fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 226 até
+Octeto 229: Distorção Harmônica de Tensão na fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 230 até
+Octeto 233: Distorção Harmônica de Tensão na fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 234 até
+Octeto 237: Distorção Harmônica de Corrente na fase A (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 238 até
+Octeto 241: Distorção Harmônica de Corrente na fase B (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 242 até
+Octeto 245: Distorção Harmônica de Corrente na fase C (ponto flutuante IEEE – 754 em 32 bits)
+Octeto 246: Indicador de conversão de grandezas
+Octeto 247 até
+Octeto 256: NULL
+Octeto 257: CRC LSB
+Octeto 258: CRC MSB

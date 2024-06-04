@@ -8,11 +8,10 @@ Programa para obter leituras instantâneas de medidores ABNT
 - - [X] Abertura de porta comm
 - - [X] Fechamento porta comm
 - - [X] Envio e recebimento de dados 
-- [ ] Comandos ABNT
+- [X] Comandos ABNT
 - - [X] Envio
 - - [X] Recebimento
-- - [ ] Interpretação
-- - [ ] Calculo de CRC
+- - [X] Interpretação
 - [X] Operação com CSV
 - - [X] Leitura
 - - [X] Escrita
@@ -23,6 +22,8 @@ Programa para obter leituras instantâneas de medidores ABNT
 pip install pyserial
 pip install colorama
 ```
+
+### Issues (⭐)
 
 <h4 align="center"> 
 	🚧  Em 🚀 construção...  🚧
