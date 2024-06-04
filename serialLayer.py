@@ -1,35 +1,36 @@
-import datetime
-import time
-
-import io
-import serial
-import errno
-from colorama import Fore, Back, Style
-from time import sleep
 import logging
-import csv
+import serial
 
 #comm ports var
 serialComm = 'COM21'
 #global vars
 global comport
 
-def openportRelayBox():
+def openportSerial():
     global comport
     try:
-        comport = serial.Serial(port=serialComm, baudrate=115200, timeout=5, stopbits=serial.STOPBITS_ONE)
+        comport = serial.Serial(port=serialComm, baudrate=9600, timeout=1, stopbits=serial.STOPBITS_ONE)
     except serial.SerialException as e:
         logging.error("Error during open port RelayBox: %s" % e)
 
-def closeportRelayBox():
+def closeportSerial():
     global comport
     comport.close()
 
 def sendData(data):
+    openportSerial()
     global comport
     try:
-        comport.write(data)
-        logging.info("Rele open")
+        comport.write(bytes.fromhex(data))
     except serial.SerialException as e:
-        logging.error("Error during open RelayBox_ch1: %s" % e)
+        print("Error during sending something by serial: %s" % e)
+    closeportSerial()
 
+def receiveData():
+    openportSerial()
+    global comport
+    try:
+        return comport.readall().hex()
+    except serial.SerialException as e:
+        print("Error during receiving something by serial: %s" % e)
+    closeportSerial()

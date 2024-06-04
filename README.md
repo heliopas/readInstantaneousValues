@@ -4,18 +4,18 @@
 Programa para obter leituras instantâneas de medidores ABNT
 
 ### Features
-- [ ] Comunicação serial
+- [X] Comunicação serial
 - - [X] Abertura de porta comm
 - - [X] Fechamento porta comm
-- - [ ] Envio e recebimento de dados 
+- - [X] Envio e recebimento de dados 
 - [ ] Comandos ABNT
-- - [ ] Envio
-- - [ ] Recebimento
+- - [X] Envio
+- - [X] Recebimento
 - - [ ] Interpretação
 - - [ ] Calculo de CRC
-- [ ] Operação com CSV
-- - [ ] Leitura
-- - [ ] Escrita
+- [X] Operação com CSV
+- - [X] Leitura
+- - [X] Escrita
 - [ ] Parametros via linha de comando
 
 ### Instalação
