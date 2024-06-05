@@ -15,7 +15,9 @@ Programa para obter leituras instantâneas de medidores ABNT
 - [X] Operação com CSV
 - - [X] Leitura
 - - [X] Escrita
+- [X] Exibição dos logs via PowerBi
 - [ ] Parametros via linha de comando
+
 
 ### Instalação
 ```bash
