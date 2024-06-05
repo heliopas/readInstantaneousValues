@@ -17,6 +17,8 @@ Programa para obter leituras instantâneas de medidores ABNT
 - - [X] Escrita
 - [X] Exibição dos logs via PowerBi
 - [ ] Parametros via linha de comando
+- - [ ] Tempo de duração de execução
+- - [ ] Quantidade de ciclos de teste
 
 
 ### Instalação

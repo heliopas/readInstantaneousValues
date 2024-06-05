@@ -76,7 +76,7 @@ def framereacCMD14(data):
 
         vec = [logTime, serialNumber, uA, uB, uC,
                iA, iB, iC,
-               paC, paB, paC, paABC,
+               paA, paB, paC, paABC,
                prA, prB, prC, prABC,
                fHz, tempMeter]
 

@@ -25,14 +25,17 @@ if __name__ == "__main__":
     csvLayer.createCsv()
     serialLayer.openportSerial()
 
-    for aux in range(200):
+    #for aux in range(10):
+    while True:
         #envia comando para o do medidor
         serialLayer.sendData(csvLayer.loadCSV()[1].split(',')[1])
         # recebe informações do medidor
         serialData = serialLayer.receiveData()
+        print(serialData)
         # salva em CSV as informações do medidor
         csvLayer.writeCSVdata(readinstantaneousValues.framereacCMD14(serialData))
-        print('Executando!!!!' + str(aux))
-        time.sleep(10)
-
+        #print('Executando!!!!' + str(aux))
+        print('Executando!!!')
+        time.sleep(1)
+		
     serialLayer.closeportSerial()
